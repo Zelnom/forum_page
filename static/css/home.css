@@ -1,0 +1,133 @@
+#homexd{
+    padding-top : 200px;
+    margin : 0;
+
+}
+
+#menu {
+    display:none;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+}
+
+#menu.visible {
+    display: block;
+    transform: translateX(0);
+}
+
+.offcanvas {
+    transition: transform 0.3s ease-in-out;
+}
+
+.offcanvas:not(.show) {
+    transform: translateX(-100%);
+}
+
+/*#mainContent.open {*/
+/*    transform: translateX(300px); !* Set this to the width of your menu *!*/
+/*    transition: transform 0.3s ease-in-out;*/
+/*}*/
+
+.mainContent.pushed-content{
+    position: relative;
+    left: 400px;
+    transition: left .3s ease;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container-fluid .d-flex {
+    flex-grow: 1;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.nav-list {
+    list-style: none; /* This removes the bullets */
+    display: flex;    /* This makes the list horizontal */
+    justify-content: space-between; /* Optional, adds spacing between the list items */
+}
+
+.nav-items {
+    margin-right: 40px;
+}
+
+#uno {
+    padding-top: 10px;
+}
+
+
+
+.navbar-brand {
+    order: -1;
+    padding-left: 100px;
+}
+
+
+.navbar {
+    background-color: black !important;
+/*The !important rule in CSS is used to increase the importance of a CSS property, so that it can override*/
+/*the property of the same element defined in any other style settings .    */
+}
+
+#offcanvasNavbar {
+    /*background-color: navajowhite;*/
+    background-image: url("/static/images/desmenu.jpeg");  /* we set the background image of the pop-up menu with the image given by url*/
+    background-repeat: no-repeat;    /*  */
+    background-size: cover;   /*  */
+}
+
+.forum-link, .memes-link, .aboutus-link, .motiv-link, .canva-link{
+    color : white;
+}
+.forum-link:hover, .memes-link:hover, .aboutus-link:hover, .motiv-link:hover, .canva-link:hover{
+    color:red;
+}
+.home-font, .link-font, .feedback-font, .dropdown-item{
+    color : white;
+}
+
+.home-font:hover, .link-font:hover, .feedback-font:hover, .dropdown-item:hover{
+    color : red;
+}
+
+#dropdown-settings {
+    background-color: transparent;
+
+}
+
+.dropdown-divider {
+    background-color: white;
+}
+
+#x1, #x2, #x3 {
+    background-color: transparent;
+}
+
+.btn-outline-secondary:hover {
+    background-color : red;
+}
+
+.canva-link {
+    background-image: url("/static/images/logoggg.png");
+    background-position: 5px center;   /* 5px from the left edge of the containter, if the value increases => the image will get into text */
+    /* 5px for X, and for Y = center */
+    background-color : transparent;
+    background-size: 90px 90px;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 80px;
+
+}
+
+#main-text {
+    background-color : black;
+    color : white;
+}
+
+
